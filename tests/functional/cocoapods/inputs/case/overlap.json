@@ -1,0 +1,34 @@
+{
+  "name": "shared dependency with overlapping constraints",
+  "index": "overlap",
+  "requested": {
+    "a": "1.0.0",
+    "b": "1.0.0"
+  },
+  "base": [],
+  "resolved": [
+    {
+      "name": "a",
+      "version": "1.0.0",
+      "dependencies": [
+        {
+          "name": "shared",
+          "version": "3.6.9",
+          "dependencies": []
+        }
+      ]
+    },
+    {
+      "name": "b",
+      "version": "1.0.0",
+      "dependencies": [
+        {
+          "name": "shared",
+          "version": "3.6.9",
+          "dependencies": []
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

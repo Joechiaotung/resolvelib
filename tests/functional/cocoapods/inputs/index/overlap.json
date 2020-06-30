@@ -1,0 +1,54 @@
+{
+  "a": [
+    {
+      "name": "a",
+      "version": "1.0.0",
+      "dependencies": {
+        "shared": ">= 2.0.0",
+        "shared": "< 4.0.0"
+      }
+    }
+  ],
+  "b": [
+    {
+      "name": "b",
+      "version": "1.0.0",
+      "dependencies": {
+        "shared": ">= 3.0.0",
+        "shared": "< 5.0.0"
+      }
+    }
+  ],
+  "shared": [
+    {
+      "name": "shared",
+      "version": "2.0.0",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "shared",
+      "version": "3.0.0",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "shared",
+      "version": "3.6.9",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "shared",
+      "version": "4.0.0",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "shared",
+      "version": "5.0.0",
+      "dependencies": {
+      }
+    }
+  ]
+}
