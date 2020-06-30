@@ -395,7 +395,7 @@ class Resolver(AbstractResolver):
 
     base_exception = ResolverException
 
-    def resolve(self, requirements, max_rounds=5):
+    def resolve(self, requirements, max_rounds=100):
         """Take a collection of constraints, spit out the resolution result.
 
         The return value is a representation to the final resolution result. It
