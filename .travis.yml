@@ -16,13 +16,14 @@ jobs:
       script: setl publish --no-upload
     - stage: primary
     - python: "2.7"
-    - python: "3.8"
     - stage: secondary
       python: "3.7"
     - python: "3.6"
     - python: "nightly"
   allow_failures:
     - python: "nightly"
+
+python: "3.8"
 
 install: pip install .[test]
 
