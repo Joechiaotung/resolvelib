@@ -11,7 +11,6 @@ import packaging.specifiers
 import packaging.version
 import pytest
 
-print (sys.path)
 from ..src.resolvelib.providers import AbstractProvider
 from ..src.resolvelib.resolvers import ResolutionImpossible, Resolver
 
