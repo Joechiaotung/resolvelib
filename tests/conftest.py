@@ -1,6 +1,6 @@
 import pytest
 
-from resolvelib.reporters import BaseReporter
+from ..src.resolvelib.reporters import BaseReporter
 
 
 @pytest.fixture(scope="session")

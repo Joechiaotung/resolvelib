@@ -4,13 +4,16 @@ import operator
 import os
 import re
 import string
+import sys
 
 import commentjson
 import packaging.specifiers
 import packaging.version
 import pytest
 
-from resolvelib import AbstractProvider, ResolutionImpossible, Resolver
+print (sys.path)
+from ..src.resolvelib.providers import AbstractProvider
+from ..src.resolvelib.resolvers import ResolutionImpossible, Resolver
 
 
 Requirement = collections.namedtuple("Requirement", "name spec")
