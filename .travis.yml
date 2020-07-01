@@ -4,8 +4,6 @@ cache: pip
 
 python:
 - "3.8"
-- "3.7"
-- "3.6"
 
 jobs:
   fast_finish: true
@@ -25,4 +23,7 @@ jobs:
     - stage: complex
       install: pip install .[test]
       script: pytest tests/test_complex.py
+
+install: pip install .[test]
+script: pytest tests/test_complex.py
 
