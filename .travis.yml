@@ -2,14 +2,25 @@ language: python
 
 cache: pip
 
+python: 
+- "3.8"
+- "3.7"
+- "3.6"
+- "2.7"
+
 jobs:
   fast_finish: true
   include:
+    - stage: lint
+      name: syntax
+      install: pip install black flake8
+      script:
+        - black --check .
+        - flake8 .
     - name: packaging
       install: pip install .[release]
       script: setl publish --no-upload
     - stage: primary
-      python: "3.8"
     - python: "2.7"
     - stage: secondary
       python: "3.7"
@@ -17,7 +28,6 @@ jobs:
     - python: "nightly"
   allow_failures:
     - python: "nightly"
-
 
 install: pip install .[test]
 
