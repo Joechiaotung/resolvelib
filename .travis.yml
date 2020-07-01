@@ -5,12 +5,6 @@ cache: pip
 jobs:
   fast_finish: true
   include:
-    - stage: lint
-      name: syntax
-      install: pip install black flake8
-      script:
-        - black --check .
-        - flake8 .
     - name: packaging
       install: pip install .[release]
       script: setl publish --no-upload
