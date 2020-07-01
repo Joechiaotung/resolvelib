@@ -18,7 +18,8 @@ jobs:
       install: pip install .[release]
       script: setl publish --no-upload
     - stage: primary
-    - python: "2.7"
+      install: pip install .[test]
+      script: pytest tests/test_basic
     - stage: secondary
       python: "3.7"
     - python: "3.6"
