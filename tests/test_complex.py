@@ -18,7 +18,7 @@ Requirement = collections.namedtuple("Requirement", "name spec")
 Candidate = collections.namedtuple("Candidate", "name ver deps")
 
 
-INPUTS_DIR = os.path.abspath(os.path.join(__file__, "..", "inputs"))
+INPUTS_DIR = os.path.abspath(os.path.join(__file__, "..", "complex"))
 
 CASE_DIR = os.path.join(INPUTS_DIR, "case")
 

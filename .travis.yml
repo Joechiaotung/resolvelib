@@ -4,6 +4,8 @@ cache: pip
 
 python:
 - "3.8"
+- "3.7"
+- "3.6"
 
 jobs:
   fast_finish: true
@@ -17,16 +19,10 @@ jobs:
     - name: packaging
       install: pip install .[release]
       script: setl publish --no-upload
-    - stage: primary
+    - stage: simple
       install: pip install .[test]
-      script: pytest tests/test_basic.py
-    - stage: secondary
-      python: "3.7"
-    - python: "3.6"
-    - python: "nightly"
-  allow_failures:
-    - python: "nightly"
+      script: pytest tests/test_simple.py
+    - stage: complex
+      install: pip install .[test]
+      script: pytest tests/test_complex.py
 
-install: pip install .[test]
-
-script: pytest tests
