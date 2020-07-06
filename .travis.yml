@@ -17,6 +17,12 @@ jobs:
     - name: packaging
       install: pip install .[release]
       script: setl publish --no-upload
+    - stage: resolvers
+      install: pip install .[test]
+      script: pytest tests/test_resolvers.py
+    - stage: structs
+      install: pip install .[test]
+      script: pytest tests/test_structs.py
     - stage: simple
       install: pip install .[test]
       script: pytest tests/test_simple.py
