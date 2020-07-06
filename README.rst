@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Joechiaotung/resolvelib.svg?branch=master)](https://travis-ci.org/Joechiaotung/resolvelib)
+
 ==========
 ResolveLib
 ==========

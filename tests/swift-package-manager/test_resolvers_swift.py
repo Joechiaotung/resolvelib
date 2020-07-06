@@ -6,11 +6,11 @@ import os
 import pytest
 
 import sys
+sys.path.append('../../resolvelib')
 
 from src.resolvelib.providers import AbstractProvider
 from src.resolvelib.resolvers import Resolver
 
-sys.path.append('../../resolvelib')
 
 
 Requirement = collections.namedtuple("Requirement", "container constraint")

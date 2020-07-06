@@ -12,13 +12,13 @@ import packaging.version
 import pytest
 
 import sys
+sys.path.append('../../resolvelib')
 
 from src.resolvelib.resolvers import Resolver
 
 from src.resolvelib.reporters import BaseReporter
 from src.resolvelib.providers import AbstractProvider
 
-sys.path.append('../../resolvelib')
 
 Candidate = collections.namedtuple("Candidate", "name version extras")
 
