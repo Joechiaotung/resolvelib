@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/Joechiaotung/resolvelib.svg?branch=master)](https://travis-ci.org/Joechiaotung/resolvelib)
+.. image:: https://travis-ci.org/Joechiaotung/resolvelib.svg?branch=master
+    :target: https://travis-ci.org/Joechiaotung/resolvelib
 
 ==========
 ResolveLib
