@@ -1,6 +1,6 @@
 import pytest
 
-from resolvelib import (
+from ..src.resolvelib import (
     AbstractProvider,
     BaseReporter,
     InconsistentCandidate,

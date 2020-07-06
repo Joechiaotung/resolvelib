@@ -1,6 +1,6 @@
 import pytest
 
-from resolvelib.structs import DirectedGraph
+from ..src.resolvelib.structs import DirectedGraph
 
 
 @pytest.fixture()
