@@ -11,7 +11,7 @@ import packaging.utils
 import packaging.version
 import pytest
 
-import sys
+#import sys
 # sys.path.append('../../resolvelib')
 # print(sys.path)
 from resolvelib.src.resolvelib.resolvers import Resolver

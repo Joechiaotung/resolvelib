@@ -5,13 +5,10 @@ import os
 
 import pytest
 
-import sys
+#import sys
 #sys.path.append('../../resolvelib')
-
 from resolvelib.src.resolvelib.providers import AbstractProvider
 from resolvelib.src.resolvelib.resolvers import Resolver
-
-
 
 Requirement = collections.namedtuple("Requirement", "container constraint")
 Candidate = collections.namedtuple("Candidate", "container version")
