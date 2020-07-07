@@ -5,8 +5,8 @@ import os
 
 import pytest
 
-#import sys
-#sys.path.append('../../resolvelib')
+# import sys
+# sys.path.append('../../resolvelib')
 from resolvelib.src.resolvelib.providers import AbstractProvider
 from resolvelib.src.resolvelib.resolvers import Resolver
 
