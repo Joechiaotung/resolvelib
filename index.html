@@ -18,14 +18,14 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/jejewu/resolvelib/tree/master">View on GitHub</a>
 
-          <h1 id="project_title">Pubgrub</h1>
-          <h2 id="project_tagline">Pubgrub study and implementation</h2>
+          <h1 id="project_title">Pip and Pubgrub</h1>
+          <h2 id="project_tagline">Modify Pip's resolvelib to Pubgrub algorithm</h2>
 
-            <section id="downloads">
-              <a class="link_button" href="profile_page.html">Profile</a>
-              <a class="link_button" href="article_page.html">Articles</a>
-              <a class="link_button" href="reference_page.html">References</a>
-            </section>
+          <section id="downloads">
+            <a class="link_button" href="profile_page.html">Profile</a>
+            <a class="link_button" href="article_page.html">Articles</a>
+            <a class="link_button" href="reference_page.html">References</a>
+          </section>
         </header>
     </div>
 
@@ -33,28 +33,23 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to our independent study project.</h3>
+          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span>
+          </a>Welcome to our independent study project.
+        </h3>
 
-<p>we are students from NCTU work on our project about version Solving Algorithm Pubgrub, and we also study
-pip's algorithm Resolvelib and make a comparision and some tests</p>
+        <p>We are students from NCTU that work on our project about implement version solving algorithm - Pubgrub into python's package manager - pip.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Pubgrub Detail</h3>
-
-<p>Pubgrub has for important part 1.Unit propagation(find a specify package range)
-2.Decision making (choose one version in range)3.Conflict resolution (if conflict,do that process)4.Error reporting--you can check more information in our<a href="https://docs.google.com/presentation/d/1ODSl5vlGgGOgi_jop-z68hvQb7yOH-yYFvJ61aJne6M/edit#slide=id.g83b135d9dc_2_6">
-slides</a></p>
-
-<img src="images/pubgrub_flowchart.png" clas="inline"/>
-<figcaption>Pubgrub's flow chart we make</figcaption>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Resolvelib Detail</h3>
-
-<p>Resolvelib want to choose latest version and just linearly find package's version </p>
-
-<img src="images/pip_state.png" clas="inline"/>
-<figcaption>Resolvelib's flow chart we make</figcaption>
+        <h3>
+          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span>
+          </a>Briefly
+        </h3>
+        <p>
+          Pubgrub is a algorithm which use to do version solving in Pub - the package manager in dart lang. And it use the different way to solve the version problem which is seem to be more efficient.
+        </p>
+        <p>
+          So the pip's team think it can also use in pip to improve efficiency - <a href="https://github.com/pypa/pip/issues/7406">github issue</a><br>
+          And that's what we are doing now!
+        </p>
 
       </section>
     </div>
@@ -62,21 +57,20 @@ slides</a></p>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">web's github: <a href="https://github.com/jejewu/resolvelib/tree/gh-pages">github's_link</a></p>
+        <p class="copyright">Web's github : <a href="https://github.com/jejewu/resolvelib/tree/gh-pages">github.com/jejewu/resolvelib</a></p>
       </footer>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-31063691-4");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-31063691-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
   </body>
 </html>
